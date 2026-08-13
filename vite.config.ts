@@ -1,10 +1,8 @@
-import { defineConfig } from "vite";
-import { nitro } from "nitro/vite";
-
 import { solidStart } from "@solidjs/start/config";
+import tailwindcss from "@tailwindcss/vite";
+import { nitro } from "nitro/vite";
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  plugins: [solidStart(),
-    nitro()
-  ]
+  plugins: [tailwindcss(), solidStart(), nitro()],
 });
