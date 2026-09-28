@@ -38,6 +38,7 @@ export const shops = pgTable(
     displayName: text("display_name").notNull(),
     isVerified: boolean("is_verified").notNull().default(false),
     followersCount: integer("followers_count").default(0),
+    whatsappNumber: text("whatsapp_number"),
     pageCreatedAt: timestamp("page_created_at", { withTimezone: true }),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
